@@ -1,21 +1,29 @@
+import { Link, NavLink } from "react-router-dom";
+import { useState } from "react";
 
 function Nav() {
+  const [ menuOpen, setMenuOpen ] = useState(false)
     return (
       <nav className="nav-container">
-        <ul>
-            <div className="bar"></div>
-            <div className="bar"></div>
-            <div className="bar"></div>
-        </ul>
-        <ul>
-        <img src="littlelemonlogo.jpg" alt="Little Lemon Logo with lemon image" className="logo"/>
-        </ul>
-       <ul className="navlinks">
-            <a href="/">Home</a>
-            <a href="/booking">Reserve Dining</a>
-            <a href="/confirmed">Submit Dining Reservation</a>
+        <Link className="title" to='/'><img src="littlelemonlogo.jpg" alt="Little Lemon Logo with lemon image" className="logo" /></Link>
+        <div className="menu" onClick={() => {
+          setMenuOpen(!menuOpen);
+        }}>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+       <ul className={menuOpen ? "open" : ""}>
+            <li>
+              <NavLink to="/">Menu</NavLink>
+            </li>
+            <li>
+              <NavLink to="/booking">Reserve Table</NavLink>
+            </li>
+            <li>
+              <NavLink to="/confirmed">Contact</NavLink>
+            </li>
        </ul>
-       <button></button>
       </nav>
     );
   }
