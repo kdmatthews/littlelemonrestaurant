@@ -19,27 +19,44 @@ function BookingForm(props){
     return(
         <>
         <Header />
-        <div class="image-background">
-        <div class="form-container">
+        <div class="booking-container">
+        <div class="time-container">
+            <h2> Time Open </h2>
+            <h3>Monday-Friday</h3>
+            <p>7am - 11am (breakfast)</p>
+            <p>11am - 10pm (lunch/dinner)</p>
+            <h3>Saturday and Sunday</h3>
+            <p>9am - 1pm (brunch)</p>
+            <p>1pm - 10pm (lunch/dinner)</p>
+            <hr />
+            <h4>Call Us: (123)867-5309</h4>
+        </div>
         <form onSubmit={handleSubmit}>
+            <h1>Book Reservation</h1>
+            <div class="form-field">
             <label htmlFor="res-date">Choose a date</label>
             <input type="date" name="res-date" id="res-date" required value={date} onChange={(e) => handleChange(e.target.value)}/>
-            <label htmlFor="res-time">Choose a time</label>
+            </div>
+           <div class="form-field">
+           <label htmlFor="res-time">Choose a time</label>
             <select name="res-time" id="res-time" value={time} onChange={(e) => setTime(e.target.value)}>
                <option value="">Select a Time</option>
                {props.availableTimes.availableTimes.map(availableTimes => {return <option key= {availableTimes}>{availableTimes}</option>})}
             </select>
-            <label htmlFor="guests">Number of Guests</label>
+           </div>
+           <div class="form-field">
+           <label htmlFor="guests">Number of Guests</label>
             <input type="number" required placeholder="1" min='1' max='10' id="guests" value={guests} onChange={(e) => setGuests(e.target.value)}/>
+           </div>
+            <div class="form-field">
             <label htmlFor="occasion">Occasion</label>
             <select name="occasion" id="occasion" value={occasion} onChange={(e) => setOccasion(e.target.value)}>
                 <option value="birthday">Birthday</option>
                 <option value="anniversary">Anniversary</option>
             </select>
-            <input class="submit-button" type="submit" value="Make Your Reservation"/>
-
+            </div>
+            <input class="submit-button" type="submit" value="Submit"/>
         </form>
-        </div>
         </div>
         </>
     );
