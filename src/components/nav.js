@@ -20,9 +20,7 @@ function Nav() {
             <li>
               <NavLink to="/booking">Reserve Table</NavLink>
             </li>
-            <li>
-              <NavLink to="/confirmed">Contact</NavLink>
-            </li>
+
        </ul>
       </nav>
     );
