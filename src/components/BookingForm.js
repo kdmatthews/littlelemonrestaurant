@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import Header from './header';
-import { Link } from 'react-router-dom';
+
 
 function BookingForm(props){
     const [name, setName] = useState("");
@@ -61,7 +61,7 @@ function BookingForm(props){
                 <option value="anniversary">Anniversary</option>
             </select>
             </div>
-           <Link to={{ pathname: '/confirmed', state: name } } > <input class="submit-button" type="submit" value="Submit" /> </Link> 
+            <input class="submit-button" type="submit" value="Submit"/>
         </form>
         </div>
         </>
