@@ -1,7 +1,9 @@
 import React, {useState} from 'react';
 import Header from './header';
+import { Link } from 'react-router-dom';
 
 function BookingForm(props){
+    const [name, setName] = useState("");
     const [date, setDate] = useState("");
     const [time, setTime] = useState("");
     const [guests, setGuests] = useState("");
@@ -34,6 +36,10 @@ function BookingForm(props){
         <form onSubmit={handleSubmit}>
             <h1>Book Reservation</h1>
             <div class="form-field">
+                <label htmlFor="name">First Name</label>
+                <input type="text" name="firstname" id="firstname" value={name} required onChange={(e) => setName(e.target.value)} />
+            </div>
+            <div class="form-field">
             <label htmlFor="res-date">Choose a date</label>
             <input type="date" name="res-date" id="res-date" required value={date} onChange={(e) => handleChange(e.target.value)}/>
             </div>
@@ -55,7 +61,7 @@ function BookingForm(props){
                 <option value="anniversary">Anniversary</option>
             </select>
             </div>
-            <input class="submit-button" type="submit" value="Submit"/>
+           <Link to={{ pathname: '/confirmed', state: name } } > <input class="submit-button" type="submit" value="Submit" /> </Link> 
         </form>
         </div>
         </>
