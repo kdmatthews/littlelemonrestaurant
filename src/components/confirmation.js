@@ -1,10 +1,7 @@
-import Header from "./header";
-import { Link } from "react-router-dom";
 
 function Confirmation(props){
     return(
         <>
-        <Header />
         <div class="confirmation-container">
         <h3>Thank You! </h3>
         <img class="confirmation-img" src="header.jpg" alt="picture of food on a tray held by a chef" />
