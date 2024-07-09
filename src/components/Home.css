@@ -4,27 +4,25 @@
     font-family: Markazi;
 }
 
-h1{
+.home-container h1{
     text-transform: uppercase;
     font-size: 2.3rem;
 }
-h2{
+.home-container h2{
     text-transform: uppercase;
     font-size: 2rem;
     margin-bottom: 0;
+    margin-top: 0;
 }
 
-button{
-    text-transform: uppercase;
-}
 
-p{
+.home-container p{
     font-size: 1.2rem;
     margin-left: 2rem;
     margin-right: 2rem;
 }
 
-img{
+.home-container img{
     width: 50vw;
 }
 .pages{
@@ -32,11 +30,19 @@ img{
     grid-template-columns: 1fr 1fr;
 }
 
+@media (max-width: 1025px){
+    .pages{
+      grid-template-columns: 100%;
+      padding: 1.5rem;
+    }
+}
+
 .book-online{
     background-color: #fefbea;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    color: #495E57;
 }
 
 .menu{
@@ -46,14 +52,27 @@ img{
     flex-direction: column;
     justify-content: center;
 }
-button{
+.home-container a{
     padding: 1rem;
     background-color: #F4CE14;
-    border: #efcd0b 4rem;
-    margin-left: 10rem;
-    margin-right: 10rem;
+    border: .2rem solid #ddbd0b;
+    margin-right: 13rem;
+    margin-left: 13rem;
+    color: #fefbea;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
 }
-
+.home-container a:hover{
+    background-color: #fdf6d2;
+    color: #495E57;
+    border:.2rem solid #F4CE14;
+}
 .food-imageone{
     background-color: black;
+}
+
+.home-container hr{
+    width: 90%;
 }

@@ -15,10 +15,13 @@ function Nav() {
         </div>
        <ul className={menuOpen ? "open" : ""}>
             <li>
-              <NavLink to="/">Menu</NavLink>
+              <NavLink to="/">Home</NavLink>
             </li>
             <li>
               <NavLink to="/booking">Reserve Table</NavLink>
+            </li>
+            <li>
+              <NavLink to="/confirmed">Menu</NavLink>
             </li>
 
        </ul>

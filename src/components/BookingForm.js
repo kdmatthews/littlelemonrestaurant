@@ -20,7 +20,6 @@ function BookingForm(props){
     }
     return(
         <>
-        <Header />
         <div class="booking-container">
         <div class="time-container">
             <h2> Time Open </h2>

@@ -1,21 +1,19 @@
 import Nav from "./nav";
 import Header from "./header";
 import './Home.css';
+import { Link } from "react-router-dom";
 
 function Home(){
     return(
         <>
         <main class="home-container">
-            <article class="about">
-                <h1>About Us</h1>
-                <p>We are a family owned <br />Mediterranean restaurant, <br />
-                    focused on traditional recipes <br />served with a modern twist.</p>
-            </article>
             <article class="pages">
                 <section class="book-online">
+                    <hr />
                     <h2>Reserve Table</h2>
+                    <hr />
                     <p>Booking a table has never been easier. <br />Try out our new online table reservation system today.</p>
-                    <button class="reserve-button">Reserve a Table</button>
+                    <a href='/booking' class="reserve-button">Reserve a Table</a>
                 </section>
                 <section class="food-imageone">
                     <img src="pastah.jpg" alt="image of Mediterranean pasta dish" />
@@ -24,9 +22,11 @@ function Home(){
                     <img src="breadh.jpg" alt="image of Brushetta" />
                 </section>
                 <section class="menu">
+                    <hr />
                     <h2>Our Menu</h2>
+                    <hr />
                     <p>Get a taste of what we have to offer. <br />Our menu features a variety of Mediterranean cuisines <br />with a modern twist.</p>
-                    <button class="menu-button">View Our Menu</button>
+                    <a href='/confirmed' class="menu-button">View Our Menu</a>
                 </section>
             </article>
         </main>
