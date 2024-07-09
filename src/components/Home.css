@@ -30,12 +30,7 @@
     grid-template-columns: 1fr 1fr;
 }
 
-@media (max-width: 1025px){
-    .pages{
-      grid-template-columns: 100%;
-      padding: 1.5rem;
-    }
-}
+
 
 .book-online{
     background-color: #fefbea;
@@ -76,3 +71,29 @@
 .home-container hr{
     width: 90%;
 }
+
+
+@media (max-width: 1025px){
+    .pages{
+      grid-template-columns: 100%;
+      padding: 1.5rem;
+      background-color: #fefbea;
+    }
+    .menu{
+        background-color: #fefbea;
+        color:#495E57;
+    }
+    .home-container a{
+        margin-left:5.5rem;
+        margin-right: 5.5rem;
+        margin-bottom: 1rem;
+    }
+   .food-imageone{
+    background-color: #fefbea;
+    margin-bottom: 1rem;
+   }
+   .food-imagetwo{
+    background-color: #fefbea;
+   }
+    }
+

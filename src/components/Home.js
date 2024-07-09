@@ -18,7 +18,7 @@ function Home(){
                 <section class="food-imageone">
                     <img src="pastah.jpg" alt="image of Mediterranean pasta dish" />
                 </section>
-                <section class="food-image2">
+                <section class="food-imagetwo">
                     <img src="breadh.jpg" alt="image of Brushetta" />
                 </section>
                 <section class="menu">
