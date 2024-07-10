@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import './BookingForm.css';
+import Swal from 'sweetalert2';
 
 
 function BookingForm(props){
@@ -16,8 +17,13 @@ function BookingForm(props){
     }
     const handleSubmit = (e) => {
         e.preventDefault();
-        alert("Thank you "+ name + ". Your table for "
-         + guests + " on " + date + " at " + time + " has been booked. We look forward to celebrating your " + occasion + " with you.");
+        Swal.fire({
+            title: "Thank you " + name + "!",
+            text: "Your table is booked for " + date + ".",
+            imageUrl: "saladh.jpg",
+            confirmButtonText: "Confirm",
+            confirmButtonColor: "#495E57",
+          });
         props.submitForm(e);
     }
     return(
