@@ -56,13 +56,14 @@
     padding: 1rem;
     background-color: #F4CE14;
     border: .2rem solid #ddbd0b;
-    margin-right: 13rem;
-    margin-left: 13rem;
     color: #fefbea;
     font-size: 1.2rem;
     font-weight: bold;
     cursor: pointer;
-    text-decoration: none;
+    text-decoration: none !important;
+    text-align: center;
+    display: inline-block;
+    margin: 0 auto 1.25rem;
 }
 .home-container a:hover{
     background-color: #fdf6d2;
@@ -82,7 +83,7 @@
 }
 
 
-@media (max-width: 1025px){
+@media (max-width: 800px){
     .pages{
       grid-template-columns: 100%;
       padding: 1.5rem;
@@ -97,10 +98,8 @@
         background-color: #fefbea;
         color:#495E57;
     }
-    .home-container a{
-        margin-left:5.5rem;
-        margin-right: 5.5rem;
-        margin-bottom: 1rem;
+    a{
+        margin-bottom: 1.5rem;
     }
    .food-imageone{
     background-color: #fefbea;
@@ -110,4 +109,5 @@
     background-color: #fefbea;
    }
     }
+
 

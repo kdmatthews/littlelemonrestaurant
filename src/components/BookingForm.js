@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import Header from './header';
+import './BookingForm.css';
 
 
 function BookingForm(props){
