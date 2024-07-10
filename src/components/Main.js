@@ -41,7 +41,7 @@ function Main (){
     const navigate = useNavigate();
     function submitForm (formData){
         if(submitAPI(formData)){
-            navigate("/confirmed");
+            navigate("/");
         }
     }
     return (

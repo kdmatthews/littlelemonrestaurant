@@ -16,6 +16,8 @@ function BookingForm(props){
     }
     const handleSubmit = (e) => {
         e.preventDefault();
+        alert("Thank you "+ name + ". Your table for "
+         + guests + " on " + date + " at " + time + " has been booked. We look forward to celebrating your " + occasion + " with you.");
         props.submitForm(e);
     }
     return(
