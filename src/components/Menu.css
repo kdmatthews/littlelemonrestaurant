@@ -1,32 +1,92 @@
 
+
 .menu-container h1{
     display: flex;
     justify-content: center;
-    font-size: 3rem;
-    margin-bottom: 0;
+    font-size: 4rem;
     color: #495E57;
+    text-shadow: 0px 0px 3px #98afa7, 0px 0px 5px #98afa7, 0px 0px 5px #98afa7,
+    0px 0px 10px #98afa7;
 }
 
 .menu-container h2{
     display: flex;
     justify-content: center;
-    font-size: 3.5rem;
-    margin-top: 0;
+    font-size: 4.3rem;
+    margin: 1rem;
     color: #495E57;
+    text-shadow: 0px 0px 3px #98afa7, 0px 0px 5px #98afa7, 0px 0px 5px #98afa7,
+    0px 0px 10px #98afa7;
 }
 
+
 .menu-items{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
 }
 
 .menu-items img{
-    width: 40rem;
-    height: 35rem;
+    width: 25rem;
+    height: 23rem;
+    border-radius: .5rem;
 
 }
 .menu-items section{
-    margin: 1rem;
+    margin: .5rem;
     background-color: #495E57;
+    color: white;
+    border-radius: 1rem;
 }
+
+.menu-items section h3{
+    color: #F4CE14;
+    margin: 0rem;
+    font-size: 2rem;
+}
+
+.menu-items section h4{
+    color: white;
+    margin: 0.5rem;
+    font-size: 1rem;
+}
+
+
+.special-items{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+.special-items img{
+    width: 25rem;
+    height: 23rem;
+    border-radius: .5rem;
+
+}
+.special-items section{
+    margin: .5rem;
+    background-color: #495E57;
+    color: white;
+    border-radius: 1rem;
+}
+
+.special-items section h3{
+    color: #F4CE14;
+    margin: 0rem;
+    font-size: 2rem;
+}
+
+.special-items section h4{
+    color: white;
+    margin: 0.5rem;
+    font-size: 1rem;
+}
+
 

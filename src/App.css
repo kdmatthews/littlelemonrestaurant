@@ -1,62 +1,14 @@
 .App {
   height: 100%;
   width: 100%;
+  margin: 0px;
 }
-
+body{
+  margin: 0px;
+}
 .logo {
   height: 70px;
   width: 250px;
   margin-left: .5rem;
   margin-top: .15rem;
 }
-
-
-
-
-
-
-
-
-/*confirmation page */
-.confirmation-container{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-.confirmation-img{
-  width: 40vw;
-  height: 55vh;
-  border-radius: 10px;
-  margin-top: 10px;
-
-}
-
-
-.home-button{
-  background-color: #F4CE14;
-  color: white;
-  padding: .625rem 1.25rem;
-  border: none;
-  font-size: 1.56rem;
-  font-weight: 600;
-  border-radius: 100rem;
-  box-shadow: .5rem .65rem .75rem rgba(0, 0, 0, .1);
-  cursor: pointer;
-  transition: all .3s;
-}
-
-.home-button:hover{
-  transform: scale(1.03);
-  box-shadow: .65rem .75rem 1rem rgba(0, 0, 0, .3);
-
-}
-h3 {
-  font-size: 300%;
-  font-family: Markazi;
-}
-
-.image-background {
-  background-color:#F4CE14
-}
-

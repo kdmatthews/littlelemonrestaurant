@@ -5,8 +5,7 @@ function Menu (){
         <>
         <main class="menu-container">
         <header class="header-menu">
-        <h1>Our</h1>
-        <h2>Favorites</h2>
+            <h2>Favorites</h2>
         </header>
         <article class="menu-items">
             <section>
@@ -23,6 +22,21 @@ function Menu (){
                 <img src="breadh.jpg" alt="brushetta dish" />
                 <h3>Brushetta</h3>
                 <h4>$7.99</h4>
+            </section>
+        </article>
+        <header class="header-menu">
+            <h2>Specials</h2>
+        </header>
+        <article class="special-items">
+            <section>
+                <img src="fishv.jpg" alt="fish dish" />
+                <h3>Catch of the Day</h3>
+                <h4>$23.99</h4>
+            </section>
+            <section>
+                <img src="foodv.jpg" alt="chef holding plate of food" />
+                <h3>Chef Special</h3>
+                <h4>$27.99</h4>
             </section>
         </article>
         </main>
