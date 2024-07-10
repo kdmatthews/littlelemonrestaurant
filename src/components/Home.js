@@ -1,5 +1,5 @@
 import Nav from "./nav";
-import Header from "./header";
+import Header from "./Header";
 import './Home.css';
 import { Link } from "react-router-dom";
 
@@ -26,7 +26,7 @@ function Home(){
                     <h2>Our Menu</h2>
                     <hr />
                     <p>Get a taste of what we have to offer. <br />Our menu features a variety of Mediterranean cuisines <br />with a modern twist.</p>
-                    <a href='/confirmed' class="menu-button">View Our Menu</a>
+                    <a href='/menu' class="menu-button">View Our Menu</a>
                 </section>
             </article>
         </main>

@@ -1,0 +1,32 @@
+
+.menu-container h1{
+    display: flex;
+    justify-content: center;
+    font-size: 3rem;
+    margin-bottom: 0;
+    color: #495E57;
+}
+
+.menu-container h2{
+    display: flex;
+    justify-content: center;
+    font-size: 3.5rem;
+    margin-top: 0;
+    color: #495E57;
+}
+
+.menu-items{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.menu-items img{
+    width: 40rem;
+    height: 35rem;
+
+}
+.menu-items section{
+    margin: 1rem;
+    background-color: #495E57;
+}
+
