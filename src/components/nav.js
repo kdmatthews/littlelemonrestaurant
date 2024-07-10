@@ -5,6 +5,7 @@ import './Nav.css';
 function Nav() {
   const [ menuOpen, setMenuOpen ] = useState(false)
     return (
+      <div>
       <nav className="nav-container">
         <Link className="title" to='/'><img src="littlelemonlogo.jpg" alt="Little Lemon Logo with lemon image" className="logo" /></Link>
         <div className="menu" onClick={() => {
@@ -27,6 +28,7 @@ function Nav() {
 
        </ul>
       </nav>
+      </div>
     );
   }
   export default Nav;

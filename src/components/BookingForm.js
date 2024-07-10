@@ -43,8 +43,8 @@ function BookingForm(props){
         <form onSubmit={handleSubmit}>
             <h1>Book Reservation</h1>
             <div class="form-field">
-                <label htmlFor="name">First Name</label>
-                <input type="text" name="firstname" id="firstname" value={name} required onChange={(e) => setName(e.target.value)} />
+                <label htmlFor="name">Name</label>
+                <input type="text" name="firstname" placeholder='Name' id="firstname" value={name} required onChange={(e) => setName(e.target.value)} />
             </div>
             <div class="form-field">
             <label htmlFor="res-date">Choose a date</label>

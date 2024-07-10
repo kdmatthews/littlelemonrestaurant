@@ -1,13 +1,15 @@
   /*form*/
-body{
-    background-color:#fefbea ;
-}
+
   .booking-container{
     background-color: #fcf4c3;
     margin: 2.5rem;
     box-shadow: rgba(0, 0, 0, .1);
     display: grid;
     grid-template-columns: 45% 55%;
+    font-family: Markazi;
+   }
+   .booking-container h1{
+    text-transform: uppercase;
    }
 
    .time-container{
