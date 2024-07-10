@@ -1,8 +1,13 @@
+import './Footer.css';
 
 function Footer() {
     return (
       <>
-        <h3>footer</h3>
+      <div className="footer-container">
+        <img src="littlelemonlogo.jpg" alt="little lemon logo" />
+        <p>©2024 copyright</p>
+     
+      </div>
       </>
     );
   }
