@@ -13,7 +13,7 @@ function Home(){
                     <h2>Reserve Table</h2>
                     <hr />
                     <p>Booking a table has never been easier. <br />Try out our new online table reservation system today.</p>
-                    <a href='/booking' class="reserve-button">Reserve a Table</a>
+                    <a href='/booking' aria-label="On Click" class="reserve-button">Reserve a Table</a>
                 </section>
                 <section class="food-imageone">
                     <img src="pastah.jpg" alt="image of Mediterranean pasta dish" />
@@ -26,7 +26,7 @@ function Home(){
                     <h2>Our Menu</h2>
                     <hr />
                     <p>Get a taste of what we have to offer. <br />Our menu features a variety of Mediterranean cuisines <br />with a modern twist.</p>
-                    <a href='/menu' class="menu-button">View Our Menu</a>
+                    <a href='/menu' aria-label="On Click" class="menu-button">View Our Menu</a>
                 </section>
             </article>
         </main>
