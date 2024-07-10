@@ -28,6 +28,9 @@
 .pages{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "a b"
+    "c d";
 }
 
 
@@ -38,6 +41,7 @@
     flex-direction: column;
     justify-content: center;
     color: #495E57;
+    grid-area: a;
 }
 
 .menu{
@@ -46,6 +50,7 @@
     background-color: black;
     flex-direction: column;
     justify-content: center;
+    grid-area: d;
 }
 .home-container a{
     padding: 1rem;
@@ -66,8 +71,12 @@
 }
 .food-imageone{
     background-color: black;
+    grid-area: b;
 }
 
+.food-imagetwo{
+    grid-area: c;
+}
 .home-container hr{
     width: 90%;
 }
@@ -78,6 +87,11 @@
       grid-template-columns: 100%;
       padding: 1.5rem;
       background-color: #fefbea;
+      grid-template-areas:
+      "a"
+      "b"
+      "d"
+      "c";
     }
     .menu{
         background-color: #fefbea;
